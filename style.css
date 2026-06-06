@@ -1,0 +1,18 @@
+/* Ensure the html element is always scrollable */
+html {
+    overflow: scroll !important;
+}
+
+/* Hide targeted ad and monetization dialog classes immediately */
+[class*="demand-supply__"],
+[class*="sulvo"],
+[class*="fc-monetization"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    overflow: hidden !important;
+}
